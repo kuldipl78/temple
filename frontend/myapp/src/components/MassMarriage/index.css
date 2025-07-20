@@ -1,0 +1,102 @@
+.marriage-container {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffef5;
+  color: #333;
+  padding: 20px;
+}
+
+.marriage-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.marriage-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.marriage-intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.marriage-intro img {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.eligibility-section,
+.benefits-section,
+.cta-marriage {
+  margin-bottom: 30px;
+}
+
+.eligibility-section ul {
+  padding-left: 20px;
+}
+
+.eligibility-section li {
+  padding: 6px 0;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.benefit-card {
+  background: #fff0f0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  min-width: 200px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cta-marriage {
+  text-align: center;
+}
+
+.register-button {
+  background-color: #d94c4c;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #c43c3c;
+}
+
+@media screen and (max-width: 768px) {
+  .marriage-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-card {
+    width: 90%;
+  }
+}

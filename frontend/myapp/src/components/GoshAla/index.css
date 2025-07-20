@@ -1,0 +1,150 @@
+.service-container {
+  background-color: #fff9f2;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+.goshala-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+.goshala-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.intro-image {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.breeds-section {
+  margin-bottom: 30px;
+}
+
+.breeds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.breed-card {
+  width: 250px;
+  background-color: #fcf7e8;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.breed-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tips-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.tips-section li {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+.features-section {
+  margin-top: 30px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: #e7ffe7;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  min-width: 180px;
+  text-align: center;
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-button {
+  background-color: #f4c430;
+  color: #333;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e3b120;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breeds,
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breed-card,
+  .feature-card {
+    width: 90%;
+  }
+}

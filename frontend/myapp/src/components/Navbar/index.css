@@ -1,0 +1,162 @@
+/* Basic styling */
+.navbar {
+  width: 100%;
+  background: linear-gradient(45deg, #ec8b8b, #6969f5);
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* allow wrap */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* adds space between logo/title and nav/toggler */
+}
+
+
+/* Logo + Title */
+.navbar-logo-title {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  flex: 1; /* take available space */
+}
+.anchore-element{
+  background: radial-gradient(circle, #e7e0e3, #515254);
+  border-radius: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+}
+.anchore-element:hover{
+  background-color: rgb(248, 248, 248);
+  color: rgb(45, 43, 43);
+}
+.logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid red;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, #fe5043, #2a3ae6, #5be262); /* red to green to blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+  font-size: 14px;
+  
+}
+.language-btn{
+    
+    border: 1px solid rgb(1, 1, 1);
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgb(217, 236, 255);
+    font-weight: 600;
+    font-size: 14px;
+}
+.language-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.buttons-language{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row; /* important: keep items in row */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px; /* spacing between logo/title and nav */
+  }
+  .anchore-element{
+    
+    border-radius: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar{
+    padding: 20px;
+  }
+  .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid red;
+  margin-right: 10px;
+}
+
+  .navbar-links {
+    
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+  
+  .buttons-language{
+    display: none;
+  }
+}
+

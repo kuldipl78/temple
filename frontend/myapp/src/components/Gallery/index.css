@@ -1,0 +1,18 @@
+.images-gallery{
+    height: 500px;
+    width: 500px;
+}
+.gallery-image-container{
+    background: linear-gradient(to right, #ff7e5f, #f7dda0, #e1d9c4);
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.images-gallery{
+    border-radius: 10px;
+
+    padding: 20px;
+}

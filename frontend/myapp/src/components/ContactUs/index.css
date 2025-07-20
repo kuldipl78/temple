@@ -1,0 +1,69 @@
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Contact container styling */
+.contact-details-container {
+  padding: 24px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #fef4d8;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  animation-delay: 0.5s;
+}
+
+.contact-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.phone-numbers p {
+  font-size: 20px;
+  margin: 6px 0;
+  font-weight: 500;
+  color: #444;
+}
+
+.location-link a {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 17px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.location-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .phone-numbers p {
+    font-size: 18px;
+  }
+
+  .location-link a {
+    font-size: 16px;
+  }
+
+  .contact-details-container {
+    padding: 16px;
+    margin: 12px;
+  }
+}
